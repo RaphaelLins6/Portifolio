@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <title>Mini Portifólio</title>
+</head>
+<body>
+    <main class="cartao">
+        
+        <div class="minhas-informacoes">
+            <img class="foto" src="./src/imagens/WhatsApp Image 2022-10-15 at 20.22.13.jpeg" alt="Foto de perfil">
+            <h1 class="nome" >Raphael Lins</h1> <!-- fonte das letras:"font-family: 'VT323', monospace;"-->
+            <h2 class="cargo">Desenvolvedor Júnior</h2>
+        </div>
+        
+        <div class="conteudo">
+             <ul class="abas">
+                <li class="aba selecionado" id="sobre-mim">
+                   <img src="src/imagens/sobre.gif" alt="icone de sobre mim"> 
+                </li>
+                <li class="aba" id="minhas-redes">
+                    <img src="./src/imagens/giphy.gif" alt="ícone de redes sociais">
+                </li>
+             </ul>
+
+             <div class="informacoes-aba"> <!-- Defina bem  o nome das classes -->
+                <div class="informacao selecionado" id="informacao-sobre-mim"> 
+                    <h3 class="sub-titulo">Sobre</h3>
+
+                    <div class="descricao">
+                        <p>
+                            &#x1F4BB - Atualmente estou cursando a faculdade de ciências da computação. <br>
+                            &#x1F40D - Estou aprendendo <span>C, HTML, CSS, JS, PHP, Python, Git/Github, Sql, Java</span>. <br>
+                            &#x1F468 - Estou querendo colaborar com empresas para ganhar experiência de trabalho 
+                            tanto como estágio ou efetivo. <br>
+                            &#x1F517 - Quero colaborar com empresas tanto no Frontend quanto no Backend. <br>
+                            &#x1F4AC - Estou muito animado para contribuir para essa comunidade. <br>
+                            Brasília, DF
+                        </p>
+                    </div>    
+                </div>
+
+                <div class="informacao" id="informacao-minhas-redes">
+                    <h3 class="sub-titulo">Minhas redes</h3>
+
+                    <ul class="redes-sociais">
+                        <li>
+                            <a href="./src/imagens/curriculo.jpg" target="_blank" class="curriculo">Currículo</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/raphael-pereira-caldas-lins-367520207/" target="_blank" 
+                            class="linkedin">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/RaphaelLins6" target="_blank" class="github">Github</a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+
+</body>
+</html>
