@@ -19,6 +19,7 @@
     right: 4%;
     display: flex;
     font-family: "VT323", monospace;
+    position: fixed;
 }
 
 .navbar ul {
@@ -52,6 +53,7 @@
     vertical-align: top;
     position: absolute;
     color: black;
+    position: fixed;
 }
 
 body {
