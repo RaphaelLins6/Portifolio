@@ -1,74 +1,69 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <title>Mini Portifólio</title>
-</head>
-<body>
-    <main class="cartao">
-        
-        <div class="minhas-informacoes">
-            <img class="foto" src="./src/imagens/RaphaelPortifólio.jpg" alt="Foto de perfil">
-            <h1 class="nome" >Raphael Lins</h1> <!-- fonte das letras:"font-family: 'VT323', monospace;"-->
-            <h2 class="cargo">Desenvolvedor Júnior</h2>
-        </div>
-        
-        <div class="conteudo">
-             <ul class="abas">
-                <li class="aba selecionado" id="sobre-mim">
-                   <img src="src/imagens/sobre.gif" alt="icone de sobre mim"> 
-                </li>
-                <li class="aba" id="minhas-redes">
-                    <img src="./src/imagens/giphy.gif" alt="ícone de redes sociais">
-                </li>
-             </ul>
 
-             <div class="informacoes-aba"> <!-- Defina bem  o nome das classes -->
-                <div class="informacao selecionado" id="informacao-sobre-mim"> 
-                    <h3 class="sub-titulo">Sobre</h3>
+    <head class="header">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/estilos.css">
+        <title>Mini Portifólio</title>
+        <h1 class="titulo">Raphael Lins</h1>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/portifolio">Portifólio</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </head>
 
-                    <div class="descricao">
+    <body>
+        <main class="main">
+            
+            <article class="container-1">
+                <section class="secao">
+                    <div class="foto-texto-container">
+                        <div class="container-foto">
+                            <img src="./src/imagens/ImagemDePerfil.jpg" class="foto-de-mim">
+                        </div>
+                        <div class="texto-container">
+                            <h1 class="titulo-container"><strong>Olá, eu sou Raphael</strong></h1>
+                            <p class="sub-titulo-container">Sou um desenvolvedor .NET</p>
+                        </div>
+                    </div>
+                    <div class="container-descricao">
                         <p>
-                            &#x1F4BB - Atualmente estou cursando a faculdade de ciências da computação. <br>
-                            &#x1F40D - Estou experimentando codar com <span>C, C#, HTML, CSS, JS, PHP, Python</span>. <br>
-                            &#x1F517 - "Indivíduo motivado e entusiasta buscando oportunidades profissionais para adquirir 
-                            experiência sólida em desenvolvimento de backend e gamedev. Determinado a contribuir ativamente em 
-                            projetos desafiadores, com habilidades técnicas em constante aprimoramento e prontidão para enfrentar 
-                            novos desafios no mundo da tecnologia e dos jogos." <br>
-                            
-                            Brasília, DF
+                            Sou um estudante que gosta de programação, atualmente curso o 7º semestre de Ciência da Computação.  
+                            Ao longo de minha formação acadêmica, adquiri um conjunto diversificado de habilidades em diferentes linguagens e tecnologias, 
+                            incluindo HTML, CSS, JavaScript, C, C#, PHP, Git e WordPress.
+                            Com um forte desejo de me especializar em desenvolvimento .NET, tenho me dedicado a aprofundar meus conhecimentos nessa área. 
+                            busco constantemente oportunidades para aplicar meus aprendizados em projetos práticos, seja através de trabalhos acadêmicos, projetos pessoais 
+                            ou participação em comunidades de desenvolvimento.
+                            Me considero um profissional proativo, curioso e com grande capacidade de aprendizado. Estou sempre em busca de novos desafios e 
+                            oportunidades para aprimorar minhas habilidades e contribuir para o desenvolvimento de soluções tecnológicas de alto impacto.
                         </p>
-                    </div>    
-                </div>
+                    </div>
+                </section>
+            </article>
 
-                <div class="informacao" id="informacao-minhas-redes">
-                    <h3 class="sub-titulo">Minhas redes</h3>
+            <article class="container-2">
+                <section class="secao-2">
 
-                    <ul class="redes-sociais">
-                        <li>
-                            <a href="./src/imagens/Currículo - Atualizado - 2024.pdf" target="_blank" class="curriculo">Currículo</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/raphael-pereira-caldas-lins-367520207/" target="_blank" 
-                            class="linkedin">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/RaphaelLins6" target="_blank" class="github">Github</a>
-                        </li>
-                    </ul>
-                </div>
-             </div>
-        </div>
-    </main>
+                </section>
+            </article> 
+            
+        
+        </main>
 
-    <script src="./src/js/index.js"></script>
+        <script src="./src/js/index.js"></script>
 
-</body>
+    </body>
+
+    <footer>
+        
+    </footer>
 </html>
