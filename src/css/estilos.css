@@ -19,6 +19,7 @@
     right: 4%;
     display: flex;
     font-family: "VT323", monospace;
+    font-size: 25px;
     position: fixed;
 }
 
@@ -54,32 +55,50 @@
     position: absolute;
     color: black;
     position: fixed;
+    font-family: "VT323", monospace;
+    font-size: 45px;
+}
+
+.div1 {
+    grid-column: span 5 / span 5;
+    grid-row: span 3 / span 3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/wallp.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    margin-top: 120px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    border-radius: 15px;
 }
 
 .secao {
     height: 100%;
     width: 100%;
+    display: flex; /* Adiciona flexbox para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
     padding: 100px;
 }
 
-.conteudo-principal { /* Estilos para o novo contêiner pai */
+.conteudo-principal {
     display: flex;
-    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    text-align: center; /* Centraliza o texto */
 }
 
 .foto-texto-container {
     display: flex;
-    align-items: center;
-    margin-right: 20px; /* Adiciona espaço entre os contêineres */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    margin-right: 0; /* Remove a margem direita */
 }
 
 .container-foto {
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: 10px auto 5px; /* Centraliza horizontalmente a foto */
 }
 
 .foto-de-mim {
@@ -98,60 +117,102 @@
     color: #ffffff;
     font-family: "VT323", monospace;
     font-size: 25px;
+    margin-bottom: 20px; /* Adiciona espaço entre o subtítulo e o botão */
 }
 
-.container-descricao {
-    flex: 1; /* Permite que a descrição ocupe o espaço restante */
-    color: #ffffff;
-    font-size: 25px;
+.btn1 {
+    background-color: black;
+    color: orange;
+    border: 2px solid orange;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.container-2 {
-    background-color: #bebebe; /* Cor alterada para um cinza mais escuro */
-    height: 500px;
-    width: cover;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;
-}
-
-.secao-2 {
-    background-color: aqua;
-    height: 85%;
-    width: 95%; /* Defina uma largura para centralizar */
+.btn1:hover {
+    background-color: orange;
+    color: black;
+    border: 2px solid black;
 }
 
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    background-color: #181818;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/6150433.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    padding: 30px;
-    font-family: "VT323", monospace;
-    color: #f3f3f3;
-    font-size: 20px;
-}
-    
-.div1 {
-    grid-column: span 5 / span 5;
-    grid-row: span 3 / span 3;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/wallp.jpg);
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    border-radius: 15px ;
 }
 
 .div3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/SL.122519.26430.13.jpg);
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     grid-row-start: 4;
+    background-size: cover;
+    height: 350px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o título ao topo */
+    border-radius: 15px;
+}
+
+.titulo-hab {
+    margin-top: 25px;
+    font-family: "VT323", monospace;
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+    gap: 20px; /* Adiciona espaçamento entre as imagens */
+    margin-top: 20px; /* Remove a margem automática lateral */
+    width: 100%; /* Garante que o container ocupe toda a largura */
+}
+
+/* Estilos das imagens */
+.html-logo,
+.css-logo,
+.js-logo,
+.c-logo,
+.cs-logo,
+.php-logo,
+.git-logo,
+.github-logo,
+.wordpress-logo {
+    margin-top: 75px;
+    height: 67px;
+    width: 67px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos ao passar o mouse */
+.html-logo:hover,
+.css-logo:hover,
+.js-logo:hover,
+.c-logo:hover,
+.cs-logo:hover,
+.php-logo:hover,
+.git-logo:hover,
+.github-logo:hover,
+.wordpress-logo:hover {
+    transform: scale(1.15); /* Aumenta em 15% */
 }
 
 .div4 {
@@ -159,19 +220,4 @@
     grid-row: span 2 / span 2;
     grid-column-start: 4;
     grid-row-start: 4;
-}
-
-.container-3 {
-    background-color: #bebebe; /* Cor alterada para um cinza mais escuro */
-    height: 500px;
-    width: cover;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;
-}
-
-.secao-3 {
-    background-color: aqua;
-    height: 85%;
-    width: 95%; /* Defina uma largura para centralizar */
 }
