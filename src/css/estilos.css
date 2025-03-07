@@ -59,6 +59,15 @@
     font-size: 45px;
 }
 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/6150433.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .div1 {
     grid-column: span 5 / span 5;
     grid-row: span 3 / span 3;
@@ -133,21 +142,14 @@
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 5px;
+    font-family: "VT323", monospace;
+    font-size: 20px;
 }
 
 .btn1:hover {
     background-color: orange;
     color: black;
     border: 2px solid black;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/6150433.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .div3 {
