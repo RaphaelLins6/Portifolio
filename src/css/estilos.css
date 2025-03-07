@@ -56,29 +56,6 @@
     position: fixed;
 }
 
-body {
-    background-color: #181818;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-    font-family: "VT323", monospace;
-    color: #f3f3f3;
-    font-size: 20px;
-    /* Removendo o flex centralizado */
-}
-
-.container-1 {
-    background-image: url(../imagens/wallp.jpg);
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    
-}
-
 .secao {
     height: 100%;
     width: 100%;
@@ -139,6 +116,61 @@ body {
 }
 
 .secao-2 {
+    background-color: aqua;
+    height: 85%;
+    width: 95%; /* Defina uma largura para centralizar */
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #181818;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    font-family: "VT323", monospace;
+    color: #f3f3f3;
+    font-size: 20px;
+}
+    
+.div1 {
+    grid-column: span 5 / span 5;
+    grid-row: span 3 / span 3;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/wallp.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px ;
+}
+
+.div3 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.container-3 {
+    background-color: #bebebe; /* Cor alterada para um cinza mais escuro */
+    height: 500px;
+    width: cover;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+}
+
+.secao-3 {
     background-color: aqua;
     height: 85%;
     width: 95%; /* Defina uma largura para centralizar */
