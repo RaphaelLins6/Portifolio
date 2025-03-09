@@ -253,3 +253,50 @@
     max-width: 800px; /* Limita a largura do parágrafo para melhor leitura */
     margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
 }
+
+.container-rodape{
+    height: 150px;
+    font-family: "VT323", monospace;
+}
+
+footer.text-center.text-white {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+footer.text-center.text-white a {
+    color: white;
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+footer.text-center.text-white a:hover {
+    color: lightgray; /* Altera a cor ao passar o mouse, opcional */
+}
+
+.container-rodape {
+    width: 100%;
+    max-width: 1200px; /* Ajuste o valor conforme necessário */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+footer.text-center.text-white .row {
+    justify-content: center; /* Centraliza os elementos na linha */
+}
+
+footer.text-center.text-white .col-md-2 {
+    display: inline-block; /* Coloca os elementos em linha */
+    text-align: center; /* Centraliza o texto dentro de cada link */
+    margin: 10px; /* Adiciona um espaço entre os links (ajuste conforme necessário) */
+    font-size: 45px;
+}
+
+footer.text-center.text-white .fab {
+    margin-top: 10px;
+    color: white; /* Garante que os ícones do Font Awesome sejam brancos */
+}
+
+footer.text-center.text-white .fab:hover {
+    color: lightgray; /* Altera a cor dos ícones ao passar o mouse, opcional */
+}
