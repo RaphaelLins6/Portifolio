@@ -538,11 +538,13 @@ html {
     .navbar {
         top: 2%;
         right: 2%;
-        font-size: 18px;
+        font-size: 14px;
+        color: #ffffff;
     }
 
     .titulo {
         font-size: 30px;
+        color: #ffffff;
     }
 
     .parent {
@@ -649,8 +651,8 @@ html {
     }
 
     .divi1, .divi2, .divi3, .divi4, .divi5, .divi6, .divi7, .divi8, .divi9, .divi10, .divi11, .divi12 {
-        width: 90%;
-        height: auto;
+        width: 100%;
+        height: 300px;
         margin-bottom: 20px;
     }
 
