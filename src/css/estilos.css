@@ -533,6 +533,7 @@ html {
 @media (max-width: 768px) {
     .header {
         height: 70px;
+        color: #ffffff;
     }
 
     .navbar {
@@ -651,8 +652,8 @@ html {
     }
 
     .divi1, .divi2, .divi3, .divi4, .divi5, .divi6, .divi7, .divi8, .divi9, .divi10, .divi11, .divi12 {
-        width: 100%;
-        height: 300px;
+        width: 95%;
+        height: 150px;
         margin-bottom: 20px;
     }
 
