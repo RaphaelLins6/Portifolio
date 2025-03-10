@@ -543,6 +543,15 @@ html {
         color: #ffffff;
     }
 
+    .navbar a {
+        color: black;
+    }
+
+    .navbar a:hover {
+        color: rgb(255, 115, 0);
+        transition: color 0.3s ease-out;
+    }
+
     .titulo {
         font-size: 30px;
         color: #ffffff;
@@ -577,7 +586,7 @@ html {
     }
 
     .div3 {
-        height: auto;
+        height: 400px;
         margin-right: 0;
     }
 
