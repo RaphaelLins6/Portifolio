@@ -6,7 +6,7 @@
     width: auto;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between; /* Ajuste para espaçamento entre título e menu */
     position: fixed;
     top: 0;
     left: 0;
@@ -15,43 +15,33 @@
 }
 
 .navbar {
-    position: absolute;
-    top: 3%;
-    right: 4%;
     display: flex;
-    font-family: "VT323", monospace;
+    align-items: center;
+    margin-right: 20px; /* Adicione margem para separar do canto */
+}
+
+.menu-toggle {
+    display: none; /* Oculta o menu hambúrguer por padrão */
     font-size: 25px;
-    position: fixed;
-    z-index: 1000;
+    cursor: pointer;
+    color: white; /* Cor branca para o ícone */
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Alinha os itens horizontalmente */
-    align-items: center; /* Alinha os itens verticalmente */
-    z-index: 1000;
+.menu-links {
+    display: flex;
 }
 
-.navbar li {
-    position: relative; /* Necessário para posicionar a barra vertical */
-    z-index: 1000;
-}
-
-.navbar a {
-    display: block;
-    color: black;
+.menu-links a {
+    color: white; /* Cor branca para os links */
     text-decoration: none;
     padding: 10px 15px;
     transition: color 0.3s ease;
-    z-index: 1000;
+    font-family: "VT323", monospace;
+    font-size: 25px;
 }
 
-.navbar a:hover {
-    color: white;
-    transition: color 0.3s ease-out;
-    z-index: 1000;
+.menu-links a:hover {
+    color: #ccc; /* Cor um pouco mais clara ao passar o mouse */
 }
 
 .titulo {
@@ -540,14 +530,32 @@ html {
         height: 70px;
     }
 
-    .navbar {
-        top: 2%;
-        right: 2%;
-        font-size: 18px;
+    .titulo {
+        font-size: 25px;
     }
 
-    .titulo {
-        font-size: 30px;
+    .menu-links {
+        display: none; /* Oculta o menu normal no mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Ajuste conforme a altura do seu header */
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro para o menu */
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-links.show {
+        display: flex; /* Mostra o menu quando a classe 'show' é adicionada */
+    }
+
+    .menu-links a {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o menu hambúrguer no mobile */
     }
 
     .parent {
@@ -643,25 +651,45 @@ html {
 
     .container-portifolio-1 {
         height: auto;
+        display: flex; /* Adiciona flexbox */
+        flex-direction: column; /* Organiza em coluna */
+        align-items: center; /* Centraliza horizontalmente */
     }
 
     .container-portifolio-1-titulo {
         font-size: 30px;
+        text-align: center; /* Garante que o título esteja centralizado */
     }
 
     .parent2 {
         grid-template-columns: 1fr;
+        display: flex; /* Adiciona flexbox */
+        flex-direction: column; /* Organiza em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        width: 95%; /* Garante que o container ocupe a largura */
     }
 
     .divi1, .divi2, .divi3, .divi4, .divi5, .divi6, .divi7, .divi8, .divi9, .divi10, .divi11, .divi12 {
-        width: 90%;
+        width: 95%;
         height: auto;
         margin-bottom: 20px;
+        display: flex; /* Adiciona flexbox */
+        flex-direction: column; /* Organiza em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        max-width: 600px; /* Garante uma largura máxima */
+    }
+
+    .divi1 img, .divi2 img, .divi3 img, .divi4 img, .divi5 img, .divi6 img, .divi7 img, .divi8 img, .divi9 img, .divi10 img, .divi11 img, .divi12 img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* Ajusta o tamanho da imagem */
     }
 
     .overlay {
         font-size: 16px;
+        text-align: center; /* Garante que o texto do overlay esteja centralizado */
     }
+}
 
     footer.text-center.text-white {
         font-size: 16px;
@@ -670,4 +698,3 @@ html {
     footer.text-center.text-white .col-md-2 {
         font-size: 30px;
     }
-}
