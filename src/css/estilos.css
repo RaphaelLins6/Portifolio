@@ -377,7 +377,7 @@
 
 .container-portifolio-1 {
     background-image: url(../imagens/SL-043021-42650-20.jpg);
-    height: 100vh; /* Garante que o contêiner ocupe toda a altura da tela */
+    height: 2200px; /* Garante que o contêiner ocupe toda a altura da tela */
     display: flex; /* Ativa o flexbox */
     flex-direction: column;
     justify-content: center; /* Centraliza horizontalmente */
@@ -403,7 +403,7 @@
     margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-.divi1, .divi2, .divi3, .divi4 {
+.divi1, .divi2, .divi3, .divi4, .divi5, .divi6, .divi7, .divi8, .divi9, .divi10, .divi11, .divi12 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -414,7 +414,7 @@
     width: 600px;
 }
 
-.divi1 img, .divi2 img, .divi3 img {
+.divi1 img, .divi2 img, .divi3 img, .divi4 img, .divi5 img, .divi6 img, .divi7 img, .divi8 img, .divi9 img, .divi10 img, .divi11 img, .divi12 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -439,11 +439,11 @@
     padding: 10px;
 }
 
-.divi1:hover img, .divi2:hover img, .divi3:hover img, .divi4:hover img {
+.divi1:hover img, .divi2:hover img, .divi3:hover img, .divi4:hover img, .divi5:hover img, .divi6:hover img, .divi7:hover img, .divi8:hover img, .divi9:hover img, .divi10:hover img, .divi11:hover img, .divi12:hover img {
     filter: blur(5px);
 }
 
-.divi1:hover .overlay, .divi2:hover .overlay, .divi3:hover .overlay, .divi4:hover .overlay {
+.divi1:hover .overlay, .divi2:hover .overlay, .divi3:hover .overlay, .divi4:hover .overlay, .divi5:hover .overlay, .divi6:hover .overlay, .divi7:hover .overlay, .divi8:hover .overlay, .divi9:hover .overlay, .divi10:hover .overlay, .divi11:hover .overlay, .divi12:hover .overlay {
     opacity: 1;
 }     
 
