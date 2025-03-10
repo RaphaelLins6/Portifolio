@@ -544,7 +544,7 @@ html {
     }
 
     .navbar a {
-        color: black;
+        color: rgb(255, 255, 255);
     }
 
     .navbar a:hover {
@@ -586,7 +586,7 @@ html {
     }
 
     .div3 {
-        height: 400px;
+        height: 250px;
         margin-right: 0;
     }
 
@@ -661,7 +661,7 @@ html {
     }
 
     .divi1, .divi2, .divi3, .divi4, .divi5, .divi6, .divi7, .divi8, .divi9, .divi10, .divi11, .divi12 {
-        width: 95%;
+        width: 100px;
         height: 150px;
         margin-bottom: 20px;
     }
