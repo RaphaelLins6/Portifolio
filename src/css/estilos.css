@@ -533,3 +533,141 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     box-shadow: 0 0 5px 2px rgba(255, 165, 0, 0.7); /* Efeito neon laranja */
 }
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+    .header {
+        height: 70px;
+    }
+
+    .navbar {
+        top: 2%;
+        right: 2%;
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .div1 {
+        height: auto;
+        width: 95%;
+        margin: 100px auto 20px;
+        padding: 20px;
+    }
+
+    .secao {
+        padding: 20px;
+    }
+
+    .titulo-container {
+        font-size: 30px;
+    }
+
+    .sub-titulo-container {
+        font-size: 18px;
+    }
+
+    .btn1 {
+        font-size: 16px;
+    }
+
+    .div3 {
+        height: auto;
+        margin-right: 0;
+    }
+
+    .titulo-hab {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .imagens-container {
+        gap: 10px;
+    }
+
+    .html-logo,
+    .css-logo,
+    .js-logo,
+    .c-logo,
+    .cs-logo,
+    .php-logo,
+    .git-logo,
+    .github-logo,
+    .wordpress-logo {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+    }
+
+    .div4 {
+        height: auto;
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .secao-3 {
+        font-size: 25px;
+    }
+
+    .sub-titulo-3 {
+        font-size: 30px;
+    }
+
+    .form {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .container-conteudo-pai {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-contato1, .conteudo-contato2, .conteudo-contato3 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .sub-titulo-contato, .paragrafo {
+        font-size: 16px;
+    }
+
+    .container-portifolio-1 {
+        height: auto;
+    }
+
+    .container-portifolio-1-titulo {
+        font-size: 30px;
+    }
+
+    .parent2 {
+        grid-template-columns: 1fr;
+    }
+
+    .divi1, .divi2, .divi3, .divi4, .divi5, .divi6, .divi7, .divi8, .divi9, .divi10, .divi11, .divi12 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .overlay {
+        font-size: 16px;
+    }
+
+    footer.text-center.text-white {
+        font-size: 16px;
+    }
+
+    footer.text-center.text-white .col-md-2 {
+        font-size: 30px;
+    }
+}
