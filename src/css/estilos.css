@@ -227,7 +227,6 @@
     grid-column: span 5 / span 5;
     grid-row: span 3 / span 3;
     background-size: cover;
-    height: 850px;
     width: 100%;
     margin-right: 200px;
     display: flex;
@@ -235,6 +234,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px; /* Adicione padding para espaçamento interno */
+    height: auto; /* Permite que a altura seja dinâmica */
 }
 
 .secao-3 {
