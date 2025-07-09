@@ -137,6 +137,12 @@
     margin-bottom: 20px;
 }
 
+p.text-port, 
+div.text-port, 
+span.text-port{
+    color: #ffffff !important;
+}
+
 .btn1 {
     background-color: black;
     color: orange;
@@ -656,7 +662,7 @@ html {
         font-size: 16px;
     }
 
-    .container-portifolio-1 {
+    /* container-portifolio-1 {
         height: auto;
     }
 
@@ -678,13 +684,5 @@ html {
 
     .overlay {
         font-size: 16px;
-    }
-
-    footer.text-center.text-white {
-        font-size: 16px;
-    }
-
-    footer.text-center.text-white .col-md-2 {
-        font-size: 30px;
-    }
+    } */
 }
